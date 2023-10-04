@@ -19,14 +19,14 @@
     <meta name="google" content="nositelinkssearchbox" />
     <meta name="googlebot" content="notranslate" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="icon" href="/assets/favicon.png" /> -->
+    <!-- <link rxel="icon" href="/assets/favicon.png" /> -->
     <!-- <link rel="apple-touch-icon" href="/assets/favicon.png" /> -->
   </head>
-  <body>
-    <!-- <div id="EnterView">
+  <body id="_font">
+    <div id="EnterView">
       <div class="_t1">Josep Tarrés</div>
       <div class="_t2">Portfolio</div>
-    </div> -->
+    </div>
     <div id="Page">
       <div id="Background"><canvas></canvas></div>
       <div class="mask" id="Mask">
@@ -62,7 +62,7 @@
           @click="$store.app.toggleFontStyle()"
         >
           <div class="_box"></div>
-          <div class="_text">Monospaced</div>
+          <div class="_text" id="monospaced" onclick="changeFont()">Normal</div>
         </div>
       </div>
       <header class="siteHeader" id="SiteHeader">
@@ -240,6 +240,6 @@
         </div>
       </main>
     </div>
-    <!-- <script src="app.js"></script> -->
+    <script src="app2.js"></script>
   </body>
 </html>

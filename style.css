@@ -1,24 +1,18 @@
 *,*:before,*:after {
     box-sizing: inherit;
-    -webkit-user-select: inherit;
     user-select: inherit;
-    -webkit-user-drag: inherit;
-    -webkit-tap-highlight-color: inherit;
     backface-visibility: inherit
 }
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 html {
     line-height: 1;
     box-sizing: border-box;
-    -webkit-user-select: none;
     user-select: none;
-    -webkit-user-drag: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0)
 }
 
 main,canvas {
@@ -94,19 +88,12 @@ html,body {
 
 body {
     background-color: var(--c-bg);
-    font-family: "Neue Montreal";
+    font-family: "Neue Montreal Mono";
     font-weight: 600;
     font-size: 14px;
     font-feature-settings: "palt";
-    -webkit-text-size-adjust: none;
     text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     overscroll-behavior: none
-}
-
-body.is-monospaced {
-    font-family: "Neue Montreal Mono"
 }
 
 #Page {
@@ -139,7 +126,7 @@ body.is-monospaced {
     justify-content: center;
     align-items: center;
     column-gap: .5em;
-    font-size: 30px
+    font-size: 30px;
 }
 
 #EnterView ._t1 {
