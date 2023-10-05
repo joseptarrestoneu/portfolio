@@ -52,11 +52,11 @@
               :class="{ 'is-selected': $store.app.currentPath === '/projects/' }"
             >
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="projects.html">Projects</a>
+              <a class="_text" href="projects.html">&#x25cf;</a>
             </li>
             <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="info.html">&#x25cf;</a>
+              <a class="_text" href="info.html">Info</a>
             </li>
             <li
               :class="{ 'is-selected': $store.app.currentPath === '/contact/' }"
@@ -70,71 +70,39 @@
       <img src="assets/img/jo_noColor.png" alt="me"  id="image">
       <main class="content" id="Content" data-scroll="area">
         <div class="content_inner" data-scroll="target">
-          <section class="page2" id="page" data-page="info">
-            <div class="page_content info">
-              <div class="info_item info_item-1">
-                <div class="info_content">
-                  <ul>
-                    <li>
-                      <a
-                        class="text-btn"
-                        href="https://twitter.com/joseptarres"
-                        target="_blank"
-                        rel="noopener"
-                        >Twitter ↗</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="text-btn"
-                        href="https://www.instagram.com/joseptarres/"
-                        target="_blank"
-                        rel="noopener"
-                        >Instagram ↗</a
-                      >
-                    </li>
-                  </ul>
+          <section class="page2" id="page" data-page="projects">
+            <div class="page_content home">
+              <p class="home_aboutme">
+                <div class="project_list">
+                  <div class="project_info">
+                    &#x25a0; Projects (Only Develop)
+                  </div>
                 </div>
-              </div>
-              <div class="info_item info_item-2">
-                <div class="info_content">
-                  <ul>
-                    <li>
-                      <a
-                        class="text-btn"
-                        href="https://github.com/joseptarrestoneu"
-                        target="_blank"
-                        rel="noopener"
-                        >GitHub ↗</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="info_item info_item-3">
-                <div class="info_content">
-                  <ul>
-                    <li>
-                      <span class="is-light">Bootcampt Full<br/>Stack Web Developer<br/></span>
-                      <span>2023 Codespace Academy</span>
-                    </li>
-                    <li>
-                      <span class="is-light">Máster en Full<br/>Stack Development<br/></span>
-                      <span>2022 Nuclio Digital School</span>
-                    </li>
-                    <li>
-                      <span class="is-light">CGS Desenvolupament<br/>d'Aplicacions Multiplataforma<br/></span>
-                      <span>2020 IOC - in process</span>
-                    </li>
-                    <li>
-                      <span class="is-light">Màster Intel·ligència<br/>de Negoci i Big Data Analytics<br/></span>
-                      <span>2019 UOC </span>
-                    </li>
-                    <li>
-                      <span class="is-light">Diplomatura en<br/>Ciències Empresarials<br/></span>
-                      <span>2003 Universitat de Lleida</span>
-                    </li>
-                  </ul>
+                <div class="project_list">
+                  <a class="project_item text-btn" href="#" target="_blank">
+                    <div class="project_title">Carnaval Terra Endins</div>
+                    <div class="project_info">
+                      2023 / Full Stack Development / In process
+                    </div>
+                  </a>
+                  <a class="project_item text-btn" href="#" target="_blank">
+                    <div class="project_title">Portfolio</div>
+                    <div class="project_info">
+                      2023 / Web Development / Personal
+                    </div>
+                  </a>
+                  <a class="project_item text-btn" href="#" target="_blank">
+                    <div class="project_title">Programa EMS</div>
+                    <div class="project_info">
+                      2022 / Full Stack Development / Corporate
+                    </div>
+                  </a>
+                  <a class="project_item text-btn" href="#" target="_blank">
+                    <div class="project_title">To Do</div>
+                    <div class="project_info">
+                      2022 / Full Stack Development / Practice
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

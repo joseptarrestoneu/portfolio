@@ -29,7 +29,7 @@ if(document.getElementById('page')==null) {
 }
 
 function changeFont() {
-    fontFamily = document.getElementById("monospaced").textContent;
+    let fontFamily = document.getElementById("monospaced").textContent;
     if (fontFamily == "Monospaced") {
         document.getElementById('_font').style.fontFamily = 'Inconsolata_Condensed-Light';
         document.getElementById('monospaced').innerHTML= 'Normal';
@@ -41,4 +41,17 @@ function changeFont() {
     }
 }
 
-
+function changeDark() {
+    let lightselector = document.getElementById("light").textContent;
+    if (lightselector == "Light") {
+        document.getElementById('Page').style.backgroundColor = '#0D0D0D';
+        document.getElementById('image').style.opacity = '0.9';
+        document.getElementById('light').innerHTML= 'Dark';
+        document.getElementById('light_selector').innerHTML= '■';
+    } else {
+        document.getElementById('Page').style.backgroundColor = '';
+        document.getElementById('image').style.opacity = '';
+        document.getElementById('light').innerHTML= 'Light';
+        document.getElementById('light_selector').innerHTML= '□';
+    }
+}
