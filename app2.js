@@ -30,14 +30,14 @@ if(document.getElementById('page')==null) {
 
 function changeFont() {
     fontFamily = document.getElementById("monospaced").textContent;
-    console.log(fontFamily);
-    
     if (fontFamily == "Monospaced") {
-        document.getElementById('_font').style.fontFamily = 'Neue Montreal Mono';
+        document.getElementById('_font').style.fontFamily = 'Inconsolata_Condensed-Light';
         document.getElementById('monospaced').innerHTML= 'Normal';
+        document.getElementById('fontFamily_selector').innerHTML= '□';
     } else {
-        document.getElementById('_font').style.fontFamily = 'Neue Montreal';
+        document.getElementById('_font').style.fontFamily = 'SpaceGrotesk-Light';
         document.getElementById('monospaced').innerHTML= 'Monospaced';
+        document.getElementById('fontFamily_selector').innerHTML= '■';
     }
 }
 

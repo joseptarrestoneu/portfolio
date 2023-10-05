@@ -15,10 +15,6 @@ html {
     user-select: none;
 }
 
-main,canvas {
-    display: block
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-weight: inherit;
     font-size: inherit
@@ -47,53 +43,37 @@ ol,ul {
 }
 
 @font-face {
-    font-family: "Neue Montreal";
-    font-weight: 200;
-    src: url("assets/font/PPNeueMontreal-Thin.woff2") format("woff2")
+    font-family: 'Inconsolata_Condensed-Light';
+    src: url(assets/font/Inconsolata_Condensed-Light.ttf);
 }
 
 @font-face {
-    font-family: "Neue Montreal";
-    font-weight: 400;
-    src: url("assets/font/PPNeueMontreal-Book.woff2") format("woff2")
-}
-
-@font-face {
-    font-family: "Neue Montreal";
-    font-weight: 600;
-    src: url("assets/font/PPNeueMontreal-SemiBold.woff2") format("woff2")
-}
-
-@font-face {
-    font-family: "Neue Montreal Mono";
-    font-weight: 200;
-    src: url("assets/font/PPNeueMontrealMono-Thin.woff2") format("woff2")
-}
-
-@font-face {
-    font-family: "Neue Montreal Mono";
-    font-weight: 400;
-    src: url("assets/font/PPNeueMontrealMono-Book.woff2") format("woff2")
-}
-
-@font-face {
-    font-family: "Neue Montreal Mono";
-    font-weight: 600;
-    src: url("assets/font/PPNeueMontrealMono-SemiBold.woff2") format("woff2")
+    font-family: 'SpaceGrotesk-Light';
+    src: url(assets/font/SpaceGrotesk-Light.ttf);
 }
 
 html,body {
-    height: 100%
+    height: 100%;
+    position: relative;
 }
 
 body {
     background-color: var(--c-bg);
-    font-family: "Neue Montreal Mono";
+    font-family: 'Inconsolata_Condensed-Light', monospace;
     font-weight: 600;
     font-size: 14px;
     font-feature-settings: "palt";
     text-size-adjust: none;
-    overscroll-behavior: none
+    overscroll-behavior: none;
+}
+
+img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: auto;
+    height: 100vh;
+    opacity: 0.2;
 }
 
 #Page {
@@ -110,6 +90,7 @@ body {
     transition-duration: .9s;
     transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1)
 }
+
 
 #EnterView {
     position: fixed;
@@ -135,48 +116,6 @@ body {
 
 #EnterView ._t2 {
     font-weight: 200
-}
-
-#Background {
-    position: fixed;
-    z-index: 1;
-    left: var(--pad);
-    right: var(--pad);
-    top: var(--pad);
-    bottom: var(--pad);
-    pointer-events: none;
-    overflow: hidden
-}
-
-.mask {
-    position: fixed;
-    z-index: 3;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none
-}
-
-.mask_top,.mask_bottom {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: var(--pad);
-    background-color: var(--c-bg);
-    transition-property: background-color;
-    transition-duration: .9s;
-    transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
-    opacity: .9
-}
-
-.mask_top {
-    top: 0
-}
-
-.mask_bottom {
-    bottom: 0
 }
 
 .frame {
@@ -227,6 +166,20 @@ body {
 .theme {
     position: fixed;
     z-index: 10;
+    right: calc(var(--pad) - .15em);
+    bottom: var(--pad);
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    mix-blend-mode: difference;
+    display: flex;
+    column-gap: 15px;
+    cursor: pointer;
+}
+
+.theme2 {
+    position: fixed;
+    z-index: 10;
     left: calc(var(--pad) - .15em);
     bottom: var(--pad);
     transform-origin: left bottom;
@@ -236,6 +189,8 @@ body {
     display: flex;
     column-gap: 15px;
     cursor: pointer;
+    font-weight: 100;
+    font-size: .6em;
 }
 
 .theme_colors {
@@ -248,14 +203,6 @@ body {
     column-gap: 3px;
     font-weight: 400;
     text-transform: uppercase
-}
-
-.theme_btn ._box::before {
-    content: "□"
-}
-
-.theme_btn.is-selected ._box::before {
-    content: "■"
 }
 
 .content {
@@ -348,6 +295,14 @@ body {
     transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1)
 }
 
+.siteHeader_nav ol li ._box {
+    position: relative;
+    transition-property: opacity;
+    transition-duration: .4s;
+    transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+    height: 100%;
+}
+
 .siteHeader_nav ol li ._text::before {
     content: "";
     display: block;
@@ -400,7 +355,8 @@ body {
 }
 
 .home_aboutme span {
-    display: block
+    display: block;
+    font-weight: 100;
 }
 
 .project {

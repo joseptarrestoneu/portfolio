@@ -12,7 +12,7 @@
     <meta property="og:description" content="Developer in Spain" />
     <meta name="google" content="nositelinkssearchbox" />
     <meta name="googlebot" content="notranslate" />
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="_font">
@@ -30,16 +30,16 @@
       <div class="theme" id="Theme" x-data>
         <div class="theme_colors">
           <div class="theme_btn">
-            <div class="_box"></div>
+            <div class="_box">■</div>
             <div class="_text">Light</div>
           </div>
           <div class="theme_btn">
-            <div class="_box"></div>
+            <div class="_box">□</div>
             <div class="_text">Dark</div>
           </div>
         </div>
         <div class="theme_btn">
-          <div class="_box"></div>
+          <div class="_box" id="fontFamily_selector">□</div>
           <div class="_text" id="monospaced" onclick="changeFont()">Normal</div>
         </div>
       </div>
@@ -71,18 +71,20 @@
           </ol>
         </nav>
       </header>
+      <img src="assets/img/jo_noColor.png" alt="me" >
       <main class="content" id="Content" data-scroll="area">
         <div class="content_inner" data-scroll="target">
           <section class="page2" id="page" data-page="home">
             <div class="page_content home">
               <p class="home_aboutme">
-                <span>Born in 1980</span><span>in Torelló, Catalunya.</span
-                ><span>I believe</span><span>web design</span
-                ><span>can be more</span><span>diverse and inspiring.</span
-                ><span>With a mission</span><span>to present</span
-                ><span>the possibilities</span><span>of web design,</span
-                ><span>I am pursuing</span><span>new expressions</span
-                ><span>through experiments</span><span>and thoughts.</span>
+                <span>Born in 1980</span><span>Torelló, Catalunya (BCN).</span>
+                <span>I belong</span><span>to two generations:</span>
+                <span>Generation X and</span><span>the Millennials.</span>
+                <span>With the good</span><span>and the bad</span>
+                <span>that this represent.</span><span>I love</span>
+                <span>the possibilities</span><span>of web development.</span>
+                <span>Controlled perfectionist,</span><span>technology fanatic,</span>
+                <span>and sport addict.</span>
               </p>
             </div>
           </section>
