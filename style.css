@@ -36,7 +36,7 @@ ol,ul {
 :root {
     --c-bg: hsl(0, 0%, 90%);
     --c-text: hsl(0, 0%, 10%);
-    --pad: max(20px, 4vmin)
+    --pad: max(20px, 4vmin);
 }
 
 @media(prefers-color-scheme: dark) {
@@ -235,7 +235,7 @@ body {
     mix-blend-mode: difference;
     display: flex;
     column-gap: 15px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .theme_colors {
@@ -266,7 +266,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    mix-blend-mode: difference
+    mix-blend-mode: difference;
 }
 
 .content_inner {

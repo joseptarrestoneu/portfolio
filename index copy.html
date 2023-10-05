@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Josep Tarrés</title>
     <meta name="description" content="Designer and Developer in Japan" />
+    <!-- <link rel="canonical" href="https://p5aholic.me" /> -->
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Josep Tarrés" />
     <meta property="og:title" content="Keita Yamada" />
     <meta property="og:description" content="Developer in Spain" />
+    <!-- <meta property="og:url" content="https://p5aholic.me" /> -->
+    <!-- <meta property="og:image:type" content="image/png" /> -->
+    <!-- <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+    <!-- <meta name="twitter:card" content="summary_large_image" /> -->
     <meta name="google" content="nositelinkssearchbox" />
     <meta name="googlebot" content="notranslate" />
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rxel="icon" href="/assets/favicon.png" /> -->
+    <!-- <link rel="apple-touch-icon" href="/assets/favicon.png" /> -->
   </head>
   <body id="_font">
     <div id="EnterView">
@@ -21,6 +29,11 @@
       <div class="_t2" id="_t2">Portfolio</div>
     </div>
     <div id="Page">
+      <div id="Background"><canvas></canvas></div>
+      <div class="mask" id="Mask">
+        <div class="mask_top"></div>
+        <div class="mask_bottom"></div>
+      </div>
       <div class="frame" id="Frame">
         <div class="frame_line frame_line-left"></div>
         <div class="frame_line frame_line-right"></div>
@@ -28,17 +41,27 @@
         <div class="frame_line frame_line-bottom"></div>
       </div>
       <div class="theme" id="Theme" x-data>
-        <div class="theme_colors">
-          <div class="theme_btn">
+        <div class="theme_colors" @click="$store.app.toggleTheme()">
+          <div
+            class="theme_btn"
+            :class="{ 'is-selected': $store.app.theme === 'light' }"
+          >
             <div class="_box"></div>
             <div class="_text">Light</div>
           </div>
-          <div class="theme_btn">
+          <div
+            class="theme_btn"
+            :class="{ 'is-selected': $store.app.theme === 'dark' }"
+          >
             <div class="_box"></div>
             <div class="_text">Dark</div>
           </div>
         </div>
-        <div class="theme_btn">
+        <div
+          class="theme_btn"
+          :class="{ 'is-selected': $store.app.fontStyle === 'mono' }"
+          @click="$store.app.toggleFontStyle()"
+        >
           <div class="_box"></div>
           <div class="_text" id="monospaced" onclick="changeFont()">Normal</div>
         </div>
@@ -50,23 +73,23 @@
           <ol>
             <li :class="{ 'is-selected': $store.app.currentPath === '/' }">
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="me.html">Home</a>
+              <a class="_text" href="/">Home</a>
             </li>
             <li
               :class="{ 'is-selected': $store.app.currentPath === '/projects/' }"
             >
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="me.html">Projects</a>
+              <a class="_text" href="/projects/">Projects</a>
             </li>
             <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="info.html">Info</a>
+              <a class="_text" href="/info/">Info</a>
             </li>
             <li
               :class="{ 'is-selected': $store.app.currentPath === '/contact/' }"
             >
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="contact.html">Contact</a>
+              <a class="_text" href="/contact/">Contact</a>
             </li>
           </ol>
         </nav>

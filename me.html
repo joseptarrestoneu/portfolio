@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Josep Tarrés</title>
+    <meta name="description" content="Designer and Developer in Japan" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Josep Tarrés" />
+    <meta property="og:title" content="Keita Yamada" />
+    <meta property="og:description" content="Developer in Spain" />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="googlebot" content="notranslate" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="_font">
+    <div id="EnterView">
+      <div class="_t1" id="_t1">Josep Tarrés</div>
+      <div class="_t2" id="_t2">Portfolio</div>
+    </div>
+    <div id="Page">
+      <div class="frame" id="Frame">
+        <div class="frame_line frame_line-left"></div>
+        <div class="frame_line frame_line-right"></div>
+        <div class="frame_line frame_line-top"></div>
+        <div class="frame_line frame_line-bottom"></div>
+      </div>
+      <div class="theme" id="Theme" x-data>
+        <div class="theme_colors">
+          <div class="theme_btn">
+            <div class="_box"></div>
+            <div class="_text">Light</div>
+          </div>
+          <div class="theme_btn">
+            <div class="_box"></div>
+            <div class="_text">Dark</div>
+          </div>
+        </div>
+        <div class="theme_btn">
+          <div class="_box"></div>
+          <div class="_text" id="monospaced" onclick="changeFont()">Normal</div>
+        </div>
+      </div>
+      <header class="siteHeader" id="SiteHeader">
+        <h1 class="siteHeader_title">Josep Tarrés</h1>
+        <p class="siteHeader_label">Developer project</p>
+        <nav class="siteHeader_nav" x-data>
+          <ol>
+            <li :class="{ 'is-selected': $store.app.currentPath === '/' }">
+              <div class="_dot">&#x25cf;</div>
+              <a class="_text" href="me.html">Home</a>
+            </li>
+            <li
+              :class="{ 'is-selected': $store.app.currentPath === '/projects/' }"
+            >
+              <div class="_dot">&#x25cf;</div>
+              <a class="_text" href="/projects/">Projects</a>
+            </li>
+            <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
+              <div class="_dot">&#x25cf;</div>
+              <a class="_text" href="info.html">Info</a>
+            </li>
+            <li
+              :class="{ 'is-selected': $store.app.currentPath === '/contact/' }"
+            >
+              <div class="_dot">&#x25cf;</div>
+              <a class="_text" href="contact.html">Contact</a>
+            </li>
+          </ol>
+        </nav>
+      </header>
+      <main class="content" id="Content" data-scroll="area">
+        <div class="content_inner" data-scroll="target">
+          <section class="page2" id="page" data-page="home">
+            <div class="page_content home">
+              <p class="home_aboutme">
+                <span>Born in 1980</span><span>in Torelló, Catalunya.</span
+                ><span>I believe</span><span>web design</span
+                ><span>can be more</span><span>diverse and inspiring.</span
+                ><span>With a mission</span><span>to present</span
+                ><span>the possibilities</span><span>of web design,</span
+                ><span>I am pursuing</span><span>new expressions</span
+                ><span>through experiments</span><span>and thoughts.</span>
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="app2.js"></script>
+  </body>
+</html>
