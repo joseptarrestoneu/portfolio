@@ -44,12 +44,12 @@ ol,ul {
 
 @font-face {
     font-family: 'Inconsolata_Condensed-Light';
-    src: url(assets/font/Inconsolata_Condensed-Light.ttf);
+    src: url(../assets/font/Inconsolata_Condensed-Light.ttf);
 }
 
 @font-face {
     font-family: 'SpaceGrotesk-Light';
-    src: url(assets/font/SpaceGrotesk-Light.ttf);
+    src: url(../assets/font/SpaceGrotesk-Light.ttf);
 }
 
 html,body {
