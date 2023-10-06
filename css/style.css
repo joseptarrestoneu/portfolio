@@ -433,7 +433,7 @@ img {
     white-space: nowrap
 }
 
-@media(min-width: 1280px) {
+@media(min-width: 2500px) {
     .info {
         position:relative;
         left: auto;
@@ -442,7 +442,7 @@ img {
     }
 }
 
-@media(min-width: 1280px) {
+@media(min-width: 2500px) {
     .info_item {
         position:absolute
     }
@@ -452,27 +452,27 @@ img {
     margin-top: 50px
 }
 
-@media(min-width: 1280px) {
+@media(min-width: 2500px) {
     .info_item+.info_item {
         margin-top:0
     }
 }
 
-@media(min-width: 1280px) {
+@media(min-width: 2500px) {
     .info_item-1 {
         left:55%;
         top: calc(50% - 19px)
     }
 }
 
-@media(min-width: 1280px) {
+@media(min-width: 2500px) {
     .info_item-2 {
         right:calc(var(--pad)*2);
         top: calc(var(--pad)*2)
     }
 }
 
-@media(min-width: 1280px) {
+@media(min-width: 2500px) {
     .info_item-3 {
         right:calc(var(--pad)*2);
         bottom: calc(var(--pad)*2)
@@ -501,12 +501,6 @@ img {
 .contact_text+.contact_text {
     margin-top: 1em
 }
-
-/* .contact_text .jp {
-    font-family: "Neue Montreal","Hiragino Sans",Meiryo,sans-serif
-} */
-
-/*# sourceMappingURL=style.css.map */
 
 #me,
 #projects,
