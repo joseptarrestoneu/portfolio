@@ -55,3 +55,34 @@ function changeDark() {
         document.getElementById('light_selector').innerHTML= '□';
     }
 }
+
+function changeMenuHome() {
+    document.getElementById('me').style.opacity = '1';
+    document.getElementById('projects').style.opacity = '0';
+    document.getElementById('info_personal').style.opacity = '0';
+    document.getElementById('contact_personal').style.opacity = '0';
+}
+
+function changeMenuProjects() {
+    document.getElementById('me').style.opacity = '0';
+    document.getElementById('projects').style.opacity = '1';
+    document.getElementById('info_personal').style.opacity = '0';
+    document.getElementById('contact_personal').style.opacity = '0';
+}
+
+function changeMenuInfo() {
+    document.getElementById('me').style.opacity = '0';
+    document.getElementById('projects').style.opacity = '0';
+    document.getElementById('info_personal').style.opacity = '1';
+    document.getElementById('contact_personal').style.opacity = '0';
+}
+
+function changeMenuContact() {
+    document.getElementById('me').style.opacity = '0';
+    document.getElementById('projects').style.opacity = '0';
+    document.getElementById('info_personal').style.opacity = '0';
+    document.getElementById('contact_personal').style.opacity = '1';
+}
+
+
+

@@ -502,8 +502,16 @@ img {
     margin-top: 1em
 }
 
-.contact_text .jp {
+/* .contact_text .jp {
     font-family: "Neue Montreal","Hiragino Sans",Meiryo,sans-serif
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
+
+#me,
+#projects,
+#info_personal,
+#contact_personal {
+    opacity: 0;
+}
+

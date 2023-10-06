@@ -47,23 +47,23 @@
           <ol>
             <li :class="{ 'is-selected': $store.app.currentPath === '/' }">
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="me.html">Home</a>
+              <a class="_text" href="#" id="menuHome" onclick="changeMenuHome()">Home</a>
             </li>
             <li
               :class="{ 'is-selected': $store.app.currentPath === '/projects/' }"
             >
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="projects.html">Projects</a>
+              <a class="_text" href="#" id="menuProjects" onclick="changeMenuProjects()">Projects</a>
             </li>
             <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="info.html">Info</a>
+              <a class="_text" href="#" id="menuInfo" onclick="changeMenuInfo()">Info</a>
             </li>
             <li
               :class="{ 'is-selected': $store.app.currentPath === '/contact/' }"
             >
               <div class="_dot">&#x25cf;</div>
-              <a class="_text" href="contact.html">Contact</a>
+              <a class="_text" href="#" id="menuContact" onclick="changeMenuContact()">Contact</a>
             </li>
           </ol>
         </nav>
@@ -71,6 +71,139 @@
       <img src="assets/img/jo_noColor.png" alt="me"  id="image">
       <main class="content" id="Content" data-scroll="area">
         <div class="content_inner" data-scroll="target">
+          <section class="page2" id="me" data-page="home">
+            <div class="page_content home">
+              <p class="home_aboutme">
+                <span>Born in 1980</span><span>Torelló, Catalunya (BCN).</span>
+                <span>I belong</span><span>to two generations:</span>
+                <span>Generation X and</span><span>the Millennials.</span>
+                <span>With the good</span><span>and the bad</span>
+                <span>that this represent.</span><span>I love</span>
+                <span>the possibilities</span><span>of web development.</span>
+                <span>Controlled perfectionist,</span><span>technology fanatic,</span>
+                <span>and sport addict.</span>
+              </p>
+            </div>
+          </section>
+          <section class="page2" id="projects" data-page="projects">
+            <div class="page_content home">
+              <p class="home_aboutme">
+                <div class="project_list">
+                  <div class="project_info">
+                    &#x25a0; Projects (Only Develop)
+                  </div>
+                </div>
+                <div class="project_list">
+                  <a class="project_item text-btn" href="#" target="_blank">
+                    <div class="project_title">Carnaval Terra Endins</div>
+                    <div class="project_info">
+                      2023 / Full Stack Development / In process
+                    </div>
+                  </a>
+                  <a class="project_item text-btn" href="#" target="_blank">
+                    <div class="project_title">Portfolio</div>
+                    <div class="project_info">
+                      2023 / Web Development / Personal
+                    </div>
+                  </a>
+                  <a class="project_item text-btn" href="#" target="_blank">
+                    <div class="project_title">Programa EMS</div>
+                    <div class="project_info">
+                      2022 / Full Stack Development / Corporate
+                    </div>
+                  </a>
+                  <a class="project_item text-btn" href="#" target="_blank">
+                    <div class="project_title">To Do</div>
+                    <div class="project_info">
+                      2022 / Full Stack Development / Practice
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="page2" id="info_personal" data-page="info">
+            <div class="page_content info">
+              <div class="info_item info_item-1">
+                <div class="info_content">
+                  <ul>
+                    <li>
+                      <a
+                        class="text-btn"
+                        href="https://twitter.com/joseptarres"
+                        target="_blank"
+                        rel="noopener"
+                        >Twitter ↗</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-btn"
+                        href="https://www.instagram.com/joseptarres/"
+                        target="_blank"
+                        rel="noopener"
+                        >Instagram ↗</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info_item info_item-2">
+                <div class="info_content">
+                  <ul>
+                    <li>
+                      <a
+                        class="text-btn"
+                        href="https://github.com/joseptarrestoneu"
+                        target="_blank"
+                        rel="noopener"
+                        >GitHub ↗</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info_item info_item-3">
+                <div class="info_content">
+                  <ul>
+                    <li>
+                      <span class="is-light">Bootcampt Full<br/>Stack Web Developer<br/></span>
+                      <span>2023 Codespace Academy</span>
+                    </li>
+                    <li>
+                      <span class="is-light">Máster en Full<br/>Stack Development<br/></span>
+                      <span>2022 Nuclio Digital School</span>
+                    </li>
+                    <li>
+                      <span class="is-light">CGS Desenvolupament<br/>d'Aplicacions Multiplataforma<br/></span>
+                      <span>2020 IOC - in process</span>
+                    </li>
+                    <li>
+                      <span class="is-light">Màster Intel·ligència<br/>de Negoci i Big Data Analytics<br/></span>
+                      <span>2019 UOC </span>
+                    </li>
+                    <li>
+                      <span class="is-light">Diplomatura en<br/>Ciències Empresarials<br/></span>
+                      <span>2003 Universitat de Lleida</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="page2" id="contact_personal" data-page="contact">
+            <div class="page_content contact">
+              <div class="contact_wrap">
+                <a
+                  class="contact_text en text-btn"
+                  href="https://www.linkedin.com/in/josep-tarr%C3%A9s-toneu-63003040/"
+                  target="_blank"
+                  rel="noopener"
+                  >Contact LinkedIn ↗</a
+                >
+              </div>
+            </div>
+          </section>
         </div>
       </main>
     </div>
