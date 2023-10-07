@@ -449,7 +449,7 @@ img {
 }
 
 .info_item+.info_item {
-    margin-top: 50px
+    margin-top: 20px
 }
 
 @media(min-width: 2500px) {
