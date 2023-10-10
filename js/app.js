@@ -48,11 +48,13 @@ function changeDark() {
         document.getElementById('image').style.opacity = '0.9';
         document.getElementById('light').innerHTML= 'Dark';
         document.getElementById('light_selector').innerHTML= '■';
+        document.getElementById('image').style.filter = 'drop-shadow(0 0 2rem #4444dd)';
     } else {
         document.getElementById('Page').style.backgroundColor = '';
         document.getElementById('image').style.opacity = '';
         document.getElementById('light').innerHTML= 'Light';
         document.getElementById('light_selector').innerHTML= '□';
+        document.getElementById('image').style.filter = '';
     }
 }
 
