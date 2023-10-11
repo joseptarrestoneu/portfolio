@@ -1,0 +1,102 @@
+:root{
+    font-size: .785;
+    font-family: 'Inconsolata', monospace;
+    --black: #000;
+    --blue: #0d6ef2;
+    --cyan: #0dcaf0;
+    --green: #198754;
+    --indigo: #6610f2;
+    --orange: #fd7e14;
+    --puerple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --teal: #20c997;
+    --yellow: #ffc107;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#foto {
+    position: absolute;
+    width: 100%;
+    height: 100svh;
+    align-items: center;
+    object-fit: cover;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    padding: 2rem 30px;
+    position: fixed;
+    align-items: center;
+}
+
+.menu1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 3rem;
+}
+
+.menuMode {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    right: 2rem;
+}
+
+a i {
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 50px 30px;
+    position: relative;
+}
+
+.container p {
+    position: absolute;
+    font-size: 3em;
+	color: #fff;
+    justify-content: center;
+    align-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding: 2rem 30px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer p {
+    color: #fff;
+    justify-content: center;
+}
