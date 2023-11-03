@@ -1,6 +1,6 @@
 ![image](https://github.com/joseptarrestoneu/joseptarrestoneu/assets/116755784/b4e644f9-2b14-41de-bc89-86bc3a27ed25)
 
-<h3> 🛠 &nbsp;Tech Stack</h3>
+<h3> 🛠 &nbsp;Tech Stack - in process</h3>
 
 - 💻 &nbsp;
   ![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
