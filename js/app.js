@@ -85,6 +85,3 @@ function changeMenuContact() {
     document.getElementById('info_personal').style.opacity = '0';
     document.getElementById('contact_personal').style.opacity = '1';
 }
-
-
-
